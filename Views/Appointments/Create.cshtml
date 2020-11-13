@@ -1,0 +1,15 @@
+﻿@model AppointmentMvc.Models.Appointment
+
+@{
+    ViewData["Title"] = "Set Appointment";
+}
+
+<h2>Set new Appointment</h2>
+
+<form asp-action="Create">
+    <input asp-for="Message" class="form-control" />
+
+    <div class="form-group">
+        <input type="submit" value="Create" class="btn btn-primary" />
+    </div>
+</form>
