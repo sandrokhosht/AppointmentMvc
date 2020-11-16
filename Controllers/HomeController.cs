@@ -20,7 +20,7 @@ namespace AppointmentMvc.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            return Redirect("/Appointments/Create");
         }
 
         public IActionResult Privacy()

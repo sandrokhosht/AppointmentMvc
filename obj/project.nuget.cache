@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "B6v6KAn1t5TDELvZMGM1pbifieBvX/v1WvDtGEZRa98kML5orKu3sP6EPmdiXZlyYXeg260N/1SANTYYZJYT6g==",
+  "dgSpecHash": "00cn7jxLtkbbsB/M+BwG4KJLOYw9EsOywfUrJLVaaZ1rOAZJTgOCeBXbKQoIrYqYukwPOJJK1drwYFBtSdzFZA==",
   "success": true,
   "projectFilePath": "C:\\Users\\khosh\\source\\repos\\AppointmentMvc\\AppointmentMvc.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\khosh\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\khosh\\.nuget\\packages\\jquery\\3.5.1\\jquery.3.5.1.nupkg.sha512",
     "C:\\Users\\khosh\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\khosh\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
     "C:\\Users\\khosh\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.0.1\\microsoft.data.sqlclient.sni.runtime.2.0.1.nupkg.sha512",
