@@ -4,25 +4,6 @@
     ViewData["Title"] = "Set Appointment";
 }
 
-<h2>Set new Appointment</h2>
-
-<form asp-action="Create">
-    <input asp-for="Description" class="form-control" />
-
-    <div class="form-group">
-        <input type="submit" value="Create" class="btn btn-primary" />
-    </div>
-    <p>Date: <input type="date" id="datepicker"></p>
-    <p>DateTime: <input type="time" id="datetime"></p>
-    <select asp-for="Time" class="form-control" id="timePicker">
-        <option value="9">9:00</option>
-        <option value="10">10:00</option>
-        <option value="11">11:00</option>
-        <option value="12">12:00</option>
-        <option value="13">13:00</option>
-    </select>
-</form>
-
 @section Scripts{
     <script>
         var update_appointments = function () {
@@ -32,14 +13,38 @@
                 var appointmentTime = JSON.stringify(appointments[i].time);
                 $('#timePicker option[value="' + appointmentTime + '"]').prop('disabled', 'disabled');
                 }
-            
-        }
-        @*var z = 13;
-        $('#timePicker option[value="' + z + '"]').prop('disabled', 'disabled');*@
-        $(update_appointments)
 
+        }
+        $(update_appointments)
     </script>
-    }
+}
+
+
+
+<h2>Set new Appointment</h2>
+
+<form asp-action="Create">
+    <div class="form-group">
+        <label asp-for="Description" class="control-label"></label>
+        <input asp-for="Description" class="form-control" />
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Time" class="control-label"></label>
+        <span asp-validation-for="Time" class="text-danger"></span>
+        <select asp-for="Time" class="form-control" id="timePicker">
+            <option value="">Please pick the time</option>
+            <option value="9">9:00</option>
+            <option value="10">10:00</option>
+            <option value="11">11:00</option>
+            <option value="12">12:00</option>
+            <option value="13">13:00</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Create" class="btn btn-primary" />
+    </div>
+</form>
 
 
 

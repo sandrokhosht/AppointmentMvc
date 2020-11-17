@@ -11,9 +11,11 @@ namespace AppointmentMvc.Models
     {
 
         public int Id { get; set; }
+        
+        [MinLength(1), MaxLength(50), Required(ErrorMessage = "Something went wrong")]
         public string Description { get; set; }
 
-        [Range(0,24)]
+        [Range(0, 24), Required(ErrorMessage = "Something went wrong")]
         public int Time { get; set; }
 
         

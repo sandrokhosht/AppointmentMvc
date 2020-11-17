@@ -22,12 +22,30 @@ namespace AppointmentMvc.Controllers
 
         
         public async Task<IActionResult> Index()
-        {             
-            return View(await _context.Appointment.ToListAsync());
+        {
+            var appointments = await _context.Appointment.ToListAsync();
+            return View(appointments);
         }
 
+        public ActionResult Delete()
+        {
+            return View();
+        }
 
-       
+        [HttpPost, ActionName("DeleteAll")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteAll()
+        {
+            var appointments = from a in _context.Appointment select a;  
+            _context.Appointment.RemoveRange(appointments);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+
+        
+
+
+
         public async Task<IActionResult> Create()
         {
             ViewBag.appointments = await _context.Appointment.ToListAsync();
@@ -37,11 +55,13 @@ namespace AppointmentMvc.Controllers
         [HttpPost]
         public async Task<IActionResult> Create([Bind("Id,Description,Time")] Appointment appointment)
         {
-            
-            _context.Add(appointment);
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
-            
+            if (ModelState.IsValid)
+            {
+                _context.Add(appointment);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+            return View(appointment);
         }
 
 
