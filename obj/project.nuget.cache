@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "00cn7jxLtkbbsB/M+BwG4KJLOYw9EsOywfUrJLVaaZ1rOAZJTgOCeBXbKQoIrYqYukwPOJJK1drwYFBtSdzFZA==",
+  "dgSpecHash": "pAHbUXZm2t44rLXzYUG9++8/IQp4r61l/fnj4/eEFlKTQ4vcJ91uwEIu+Mm74crieQygGf9RVFTLuYN4TPiLNA==",
   "success": true,
   "projectFilePath": "C:\\Users\\khosh\\source\\repos\\AppointmentMvc\\AppointmentMvc.csproj",
   "expectedPackageFiles": [
@@ -101,7 +101,8 @@
     "C:\\Users\\khosh\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\khosh\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\khosh\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\khosh\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    "C:\\Users\\khosh\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
+    "C:\\Users\\khosh\\.nuget\\packages\\westwind.aspnetcore.livereload\\0.3.0\\westwind.aspnetcore.livereload.0.3.0.nupkg.sha512"
   ],
   "logs": []
 }

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc.Rendering;
+﻿using AppointmentMvc.CustomValidations;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -12,10 +13,11 @@ namespace AppointmentMvc.Models
 
         public int Id { get; set; }
         
-        [MinLength(1), MaxLength(50), Required(ErrorMessage = "Something went wrong")]
+        [MinLength(3), MaxLength(50), Required(ErrorMessage = "Something went wrong")]
         public string Description { get; set; }
 
-        [Range(0, 24), Required(ErrorMessage = "Something went wrong")]
+        [Range(0,24,ErrorMessage = "Input is not valid")]
+        [TimeAvailability(ErrorMessage = "This time is not available")]
         public int Time { get; set; }
 
         

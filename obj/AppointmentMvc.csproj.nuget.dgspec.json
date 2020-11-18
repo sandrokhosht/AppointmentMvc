@@ -52,6 +52,10 @@
               "target": "Package",
               "version": "[5.0.0, )"
             },
+            "Westwind.AspNetCore.LiveReload": {
+              "target": "Package",
+              "version": "[0.3.0, )"
+            },
             "jQuery": {
               "target": "Package",
               "version": "[3.5.1, )"

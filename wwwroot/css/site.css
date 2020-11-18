@@ -59,9 +59,12 @@ html {
 }
 
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    background-color: #F2F2F2;
+    color: #3B945E;
 }
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -69,3 +72,24 @@ body {
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
 }
+
+nav {
+    background-color: #57BA98;
+    color: #57BA98;
+}
+
+.btn {
+    background-color: #182628;
+    
+}
+
+select option:enabled {
+    color: #000;
+    font-weight: bold;
+}
+
+select option:disabled {
+    color: #000;
+    
+}
+

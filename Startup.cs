@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
+using Westwind.AspNetCore.LiveReload;
 
 namespace AppointmentMvc
 {
@@ -27,6 +28,7 @@ namespace AppointmentMvc
         {
             services.AddControllersWithViews();
             services.AddDbContext<AppointmentContext>(options => options.UseSqlServer(Configuration.GetConnectionString("AppointmentContext")));
+            services.AddLiveReload();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -48,6 +50,8 @@ namespace AppointmentMvc
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseLiveReload();
 
             app.UseEndpoints(endpoints =>
             {

@@ -1,15 +1,15 @@
 ﻿@model List<Appointment>
 
 @{
-    ViewData["Title"] = "All Appointment";
+    ViewData["Title"] = "Appointments List";
 }
 
-<h2>Set new Appointment</h2>
+<h2>Appointments List</h2>
 <div>
     <form asp-action="DeleteAll" method="post">
         <input type="submit" value="Delete All" class="btn btn-danger" />
     </form>
-</div>
+</div>  
 <div>
     <a asp-action="Create">Create New Appointment</a>
 </div>

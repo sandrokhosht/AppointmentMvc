@@ -53,6 +53,7 @@ namespace AppointmentMvc.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Description,Time")] Appointment appointment)
         {
             if (ModelState.IsValid)

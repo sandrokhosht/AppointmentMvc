@@ -6,7 +6,7 @@
 
 @section Scripts{
     <script>
-        var update_appointments = function () {
+        var update_appointments_time = function () {
             var appointments = @Html.Raw(Json.Serialize(@ViewBag.appointments));
             for (let i = 0; i < appointments.length; i++) {
 
@@ -15,10 +15,9 @@
                 }
 
         }
-        $(update_appointments)
+        $(update_appointments_time)
     </script>
 }
-
 
 
 <h2>Set new Appointment</h2>
@@ -40,7 +39,7 @@
             <option value="12">12:00</option>
             <option value="13">13:00</option>
         </select>
-    </div>
+    </div class="DELETEME">
     <div class="form-group">
         <input type="submit" value="Create" class="btn btn-primary" />
     </div>

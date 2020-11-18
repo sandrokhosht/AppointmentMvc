@@ -1,6 +1,5 @@
 C:\Users\khosh\source\repos\AppointmentMvc\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\khosh\source\repos\AppointmentMvc\bin\Debug\netcoreapp3.1\appsettings.json
-C:\Users\khosh\source\repos\AppointmentMvc\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\Users\khosh\source\repos\AppointmentMvc\bin\Debug\netcoreapp3.1\AppointmentMvc.exe
 C:\Users\khosh\source\repos\AppointmentMvc\obj\Debug\netcoreapp3.1\AppointmentMvc.csprojAssemblyReference.cache
 C:\Users\khosh\source\repos\AppointmentMvc\obj\Debug\netcoreapp3.1\AppointmentMvc.AssemblyInfoInputs.cache
@@ -77,5 +76,7 @@ C:\Users\khosh\source\repos\AppointmentMvc\bin\Debug\netcoreapp3.1\Humanizer.dll
 C:\Users\khosh\source\repos\AppointmentMvc\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\khosh\source\repos\AppointmentMvc\obj\Debug\netcoreapp3.1\Razor\Views\Appointments\Index.cshtml.g.cs
 C:\Users\khosh\source\repos\AppointmentMvc\obj\Debug\netcoreapp3.1\Razor\Views\Appointments\Create.cshtml.g.cs
+C:\Users\khosh\source\repos\AppointmentMvc\bin\Debug\netcoreapp3.1\Westwind.AspNetCore.LiveReload.dll
 C:\Users\khosh\source\repos\AppointmentMvc\obj\Debug\netcoreapp3.1\AppointmentMvc.csproj.CoreCompileInputs.cache
 C:\Users\khosh\source\repos\AppointmentMvc\obj\Debug\netcoreapp3.1\AppointmentMvc.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\khosh\source\repos\AppointmentMvc\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
