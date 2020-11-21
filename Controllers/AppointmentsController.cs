@@ -1,5 +1,6 @@
 ﻿using AppointmentMvc.Data;
 using AppointmentMvc.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -45,7 +46,7 @@ namespace AppointmentMvc.Controllers
         
 
 
-
+        [Authorize]
         public async Task<IActionResult> Create()
         {
             ViewBag.appointments = await _context.Appointment.ToListAsync();

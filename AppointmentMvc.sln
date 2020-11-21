@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30621.155
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppointmentMvc", "AppointmentMvc.csproj", "{CCB6B727-F121-486C-ADEE-A26F66EBCDD2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppointmentMvc", "AppointmentMvc.csproj", "{CCB6B727-F121-486C-ADEE-A26F66EBCDD2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -21,6 +21,7 @@ namespace AppointmentMvc.CustomValidations
             // getting AppointmentContext via ValidationContext
             AppointmentContext dbcontext = (AppointmentContext)validationContext.GetService(typeof(AppointmentContext));
             var times = from a in dbcontext.Appointment select a.Time;
+
             bool containsValue = times.Any(a => a == (int)value);
 
             if (containsValue)
